@@ -1,0 +1,9 @@
+---
+layout: page
+title: Pokédex
+---
+<ul>
+{% for pokemon in pokeapi.results %}
+	{% include "pokemon" %}
+{% endfor %}
+<ul>
